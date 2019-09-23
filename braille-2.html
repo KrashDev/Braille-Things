@@ -6,18 +6,26 @@
   <title>My HTML Page</title>
 </head>
 <body>
-  <h1>Braille Me</h1>
-  <h2>A place to translate text into Braille</h2>
-  <p>Just enter your text below and hit the submit button</p>
-  <div class="controls">
-    <input class="braille-input"></input>
-    <button class="submit">Braille It</button>
-    <button class="clear">Clear It</button>
+  <div class="main">
+    <h1>Braille Me</h1>
+    <h2>A place to translate text into Braille</h2>
+    <p>Just enter your text below and hit the submit button</p>
+
+    <div class="controls">
+      <input class="braille-input"></input>
+      <button class="submit">Braille It</button>
+      <button class="clear">Clear It</button>
+    </div>
+    <hr>
+    <!-- <img class="braille-img" src="braille-letters/a.png"> -->
+    <div class="braille-output"></div>
+    <p>For a different braille experience click this link:
+      <a class="alternate-page" href="braille.html">Braille as images</a>
+    </p>
+
   </div>
-  <hr>
-  <!-- <img class="braille-img" src="braille-letters/a.png"> -->
-  <div class="braille-output">
-  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
   <script>
@@ -126,6 +134,20 @@
   </script>
 
   <style>
+
+  .main {
+    text-align:center;
+  }
+
+  hr {
+    width: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  a.alternate-page {
+
+  }
 
   .braille-output span, .braille-output p {
     font-size: 50px;
